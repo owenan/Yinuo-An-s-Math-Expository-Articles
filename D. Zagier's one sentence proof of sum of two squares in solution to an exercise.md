@@ -1,6 +1,6 @@
 Exercise(D. Zagier)
 
-Let $p$ be a prime number such that $p \equiv 1 \pmod 4$. Show that there exAist $x, y \in \mathbb{Z}$ such that $x^2 + y^2 = p$ using the following argument. Define the finite set:
+Let $p$ be a prime number such that $p \equiv 1 \pmod 4$. Show that there exist $x, y \in \mathbb{Z}$ such that $x^2 + y^2 = p$ using the following argument. Define the finite set:
 
 $$S := \{(x, y, z) \in \mathbb{Z}_{\geq 1} : x^2 + 4yz = p\}.$$
 
