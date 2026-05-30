@@ -13,3 +13,7 @@ Hi, my name is Owen. A math, physics, and astronomy enthusiast. And this is my w
 
 ### Contact Me
 You can find me on [email](anyinuo20071130@gmail.com) [stackexchange](https://stackexchange.com/users/32243045/owen-a)
+
+## Expository Articles:
+
+[D. Zagier's one sentence proof of sum of two squares in solution to an exercise](D. Zagier's one sentence proof of sum of two squares in solution to an exercise.md)
