@@ -16,6 +16,6 @@ You can find me on my email anyinuo20071130@gmail.com. My stack exchange account
 
 ## Expository Articles:
 
-[D. Zagier's one sentence proof of sum of two squares in solution to an exercise](D. Zagier's one sentence proof of sum of two squares in solution to an exercise.html)
+[D. Zagier's one sentence proof of sum of two squares in solution to an exercise](D. Zagier's one sentence proof of sum of two squares in solution to an exercise.md)
 
-[Proof that $e$ is irrational by continuous fractions method](Proof that $e$ is irrational by continuous fractions method.html)
+[Proof that $e$ is irrational by continuous fractions method](Proof that $e$ is irrational by continuous fractions method.md)
