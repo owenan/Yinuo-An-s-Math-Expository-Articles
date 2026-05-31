@@ -25,7 +25,7 @@ $$[a_0]=\frac{a_0}{1},\quad [a_0,a_1]=\frac{a_1a_0+1}{a_1},\quad [a_0,a_1,a_2]=\
 
 By expanding according to the definition, we can easily discover the following properties of continued fractions for $1\le n\le N$:
 
-$$[a_0,a_1]=a_0+\frac1{a_1}\tag{1.1}$$
+$$[a_0,a_1]=a_0+\frac1{a_1}(1.1)$$
 
 $$[a_0,a_1,\cdots,a_{n-1},a_n]=[a_0,a_1,\cdots,a_{n-2},a_{n-1}+\frac1{a_n}](1.2)$$
 $$[a_0,a_1,\cdots,a_n]=a_0+\frac1{[a_1,\cdots,a_n]}=[a_0,[a_1,\cdots,a_n]](1.3)$$
