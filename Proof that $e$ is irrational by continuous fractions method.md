@@ -7,13 +7,13 @@ We will first prove that the mathematical constant $e$ can be expressed as an in
 
 We now prove that:
 
-$$e=[2,1,2,1,1,4,1,1,6,1,1,8,\cdots]\tag{1}$$
+$$e=\[2,1,2,1,1,4,1,1,6,1,1,8,\cdots\]\tag{1}$$
 
-In fact, if we slightly transform the continued fraction on the right-hand side based on $1+\frac1{0+\frac1{1+\cdots}}=2+\cdots$, we obtain $e=[1,0,1,1,2,1,1,4,1,1,8,1,1,10,1,1,\cdots]$. This expression exhibits a much clearer pattern, making it easier to define rigorously.
+In fact, if we slightly transform the continued fraction on the right-hand side based on $1+\frac1{0+\frac1{1+\cdots}}=2+\cdots$, we obtain $e=\[1,0,1,1,2,1,1,4,1,1,8,1,1,10,1,1,\cdots\]$. This expression exhibits a much clearer pattern, making it easier to define rigorously.
 
 ## Properties of Continued Fractions
 
-A fundamental property of continued fractions is that its $n$-th convergent $[a_0,a_1,\cdots,a_n]$ equals $\frac{p_n}{q_n}$, where $p_n$ and $q_n$ are recursively defined as:
+A fundamental property of continued fractions is that its $n$-th convergent $\[a_0,a_1,\cdots,a_n\]$ equals $\frac{p_n}{q_n}$, where $p_n$ and $q_n$ are recursively defined as:
 
 $$p_n=a_np_{n-1}+p_{n-2},\quad q_n=a_nq_{n-1}+q_{n-2}$$
 
