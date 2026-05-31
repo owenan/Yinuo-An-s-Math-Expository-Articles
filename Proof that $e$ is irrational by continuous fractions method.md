@@ -27,9 +27,8 @@ By expanding according to the definition, we can easily discover the following p
 
 $$[a_0,a_1]=a_0+\frac1{a_1}\tag{1.1}$$
 
-$$[a_0,a_1,\cdots,a_{n-1},a_n]=[a_0,a_1,\cdots,a_{n-2},a_{n-1}+\frac1{a_n}]\tag{1.2}$$
-
-$$[a_0,a_1,\cdots,a_n]=a_0+\frac1{[a_1,\cdots,a_n]}=[a_0,[a_1,\cdots,a_n]]\tag{1.3}$$
+$$[a_0,a_1,\cdots,a_{n-1},a_n]=[a_0,a_1,\cdots,a_{n-2},a_{n-1}+\frac1{a_n}](1.2)$$
+$$[a_0,a_1,\cdots,a_n]=a_0+\frac1{[a_1,\cdots,a_n]}=[a_0,[a_1,\cdots,a_n]](1.3)$$
 
 Applying these properties repeatedly:
 
@@ -45,13 +44,13 @@ We now prove the theorem mentioned above:
 
 **Lemma 1** If $p_n$ and $q_n$ are defined as follows:
 
-$$p_0=a_0,\quad p_1=a_1a_0+1,\quad p_n=a_np_{n-1}+p_{n-2} \quad (2\le n\le N)\tag{2.1}$$
+$$p_0=a_0,\quad p_1=a_1a_0+1,\quad p_n=a_np_{n-1}+p_{n-2} \quad (2\le n\le N)(2.1)$
 
-$$q_0=1,\quad q_1=a_1,\quad q_n=a_nq_{n-1}+q_{n-2} \quad (2\le n\le N)\tag{2.2}$$
+$$q_0=1,\quad q_1=a_1,\quad q_n=a_nq_{n-1}+q_{n-2} \quad (2\le n\le N)(2.2)$$
 
 Then:
 
-$$[a_0,a_1,\cdots,a_n]=\frac{p_n}{q_n}\tag{2.3}$$
+$$[a_0,a_1,\cdots,a_n]=\frac{p_n}{q_n}(2.3)$$
 
 _Proof._ From the expressions mentioned above:
 
