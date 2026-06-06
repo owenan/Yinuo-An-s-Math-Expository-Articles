@@ -1,6 +1,21 @@
 # owenan.github.io
+---
+layout: default
+title: Welcome to My Math Page
+---
 
-# Welcome to My Awesome Website!
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    }
+  };
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 
 Hi, my name is Owen. A math, physics, and astronomy enthusiast. And this is my website hosted entirely on GitHub Pages using Markdown.
 
@@ -20,3 +35,5 @@ You can find me on my email anyinuo20071130@gmail.com. My stack exchange account
 
 
 [Proof that $e$ is irrational by continuous fractions method](Proof that $e$ is irrational by continuous fractions method.html)
+
+
