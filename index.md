@@ -14,7 +14,7 @@ title: Welcome to My Math Page
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
-
+---
 Hi, my name is Owen. A math, physics, and astronomy enthusiast. And this is my website hosted entirely on GitHub Pages using Markdown.
 
 ## About Me
