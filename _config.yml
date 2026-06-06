@@ -1,0 +1,55 @@
+# -----------------------------------------------------------------------------
+# Site Settings
+# -----------------------------------------------------------------------------
+title: My Awesome Site
+description: >- # This allows for a multi-line description
+  A short description of my website, blog, or portfolio. 
+  This text will appear in search engine results and social media cards.
+
+# URL settings (Crucial for GitHub Pages)
+# If your site is username.github.io, set url to "https://username.github.io"
+# If it's a project page like username.github.io/project, set baseurl to "/project"
+url: "https://your-username.github.io"
+baseurl: "" # Leave empty if this is a user/organization page
+
+# Author Details
+author:
+  name: Your Name
+  email: your-email@example.com
+  twitter: your_twitter_handle
+
+# -----------------------------------------------------------------------------
+# Build Settings & Plugins
+# -----------------------------------------------------------------------------
+# GitHub Pages officially supports specific themes and plugins.
+# Using 'remote_theme' allows you to use any theme hosted on GitHub.
+remote_theme: pages-themes/cayman@v0.2.0 # Example theme (change to your preference)
+
+plugins:
+  - jekyll-feed         # Generates an RSS feed for your posts
+  - jekyll-seo-tag      # Adds SEO-friendly meta tags to your pages
+  - jekyll-sitemap      # Generates a sitemap.xml for search engines
+
+# -----------------------------------------------------------------------------
+# Content Settings
+# -----------------------------------------------------------------------------
+permalink: /:categories/:year/:month/:day/:title/
+markdown: kramdown
+highlighter: rouge
+
+# -----------------------------------------------------------------------------
+# Exclusions
+# -----------------------------------------------------------------------------
+# Exclude files and folders from being processed or included in the final site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .jekyll-cache/
+  - .jekyll-metadata
+  - README.md
+  - LICENSE
