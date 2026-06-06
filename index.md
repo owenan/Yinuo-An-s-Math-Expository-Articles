@@ -1,24 +1,8 @@
----
-layout: default
-title: Welcome to My Math Page
----
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']],
-      processEscapes: true
-    }
-  };
-</script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
----
-Hi, my name is Owen. A math, physics, and astronomy enthusiast. And this is my website hosted entirely on GitHub Pages using Markdown.
+
+Hi, my name is Owen. A math, physics, and astronomy enthusiast. And this is my website hosted on GitHub Pages using Jekyll.
 
 ## About Me
-* 🚀 **Passionate about:** Math, Physics, Astronomy, sometime Chemistry and Physics. Playing trombone, listening to music, reading world literature in English and Chinese, reading Western Philosophy and ancient Chinese books.
+* 🚀 **Passionate about:** Math, Physics, Astronomy, sometime Chemistry and Biology. Playing trombone, listening to music, reading world literature in English and Chinese, reading Western Philosophy and ancient Chinese language books.
 * 📍 **Location:** China
 
 ## My Projects
@@ -34,4 +18,4 @@ You can find me on my email anyinuo20071130@gmail.com. My stack exchange account
 
 [Proof that $e$ is irrational by continuous fractions method](Proof that $e$ is irrational by continuous fractions method.html)
 
-
+[A fill-in-the-gaps completion of Furstenberg's proof of infinitude of primes](A fill-in-the-gaps completion of Furstenberg's proof of infinitude of primes.html)
