@@ -1,9 +1,3 @@
-# owenan.github.io
----
-layout: default
-title: Welcome to My Math Page
----
-
 <script>
   window.MathJax = {
     tex: {
