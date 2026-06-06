@@ -1,22 +1,18 @@
 # -----------------------------------------------------------------------------
 # Site Settings
 # -----------------------------------------------------------------------------
-title: My Awesome Site
-description: >- # This allows for a multi-line description
-  A short description of my website, blog, or portfolio. 
-  This text will appear in search engine results and social media cards.
-
+title: Owen An's Math Physics and Astronomy Blog
+description: >- # Dedicated to study notes and expository articles in Math, Physics and Astronomy.
 # URL settings (Crucial for GitHub Pages)
 # If your site is username.github.io, set url to "https://username.github.io"
 # If it's a project page like username.github.io/project, set baseurl to "/project"
-url: "https://your-username.github.io"
+url: "owenan.github.io"
 baseurl: "" # Leave empty if this is a user/organization page
 
 # Author Details
 author:
-  name: Your Name
-  email: your-email@example.com
-  twitter: your_twitter_handle
+  name: Yinuo An
+  email: anyinuo20071130@gmail.com
 
 # -----------------------------------------------------------------------------
 # Build Settings & Plugins
