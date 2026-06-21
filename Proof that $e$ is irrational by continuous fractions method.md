@@ -1,7 +1,8 @@
-# Proof of the Irrationality of $e$ via Continued Fractions
-
-**Author:** Owen An
-
+---
+layout: post
+title: "Proof of the Irrationality of e via Continued Fractions"
+author: "Owen An"
+mathjax: true
 ---
 
 ## Proof Outline
@@ -53,16 +54,14 @@ $$[a_0,a_1,\dots,a_n]=[a_0,a_1,\dots,a_{m-1},[a_m,a_{m+1},\dots,a_n]]$$
 We now prove the theorem mentioned above:
 
 > **Lemma 1.** If $p_n$ and $q_n$ are defined as follows:
+>
 > $$p_0=a_0,\quad p_1=a_1a_0+1,\quad p_n=a_np_{n-1}+p_{n-2} \quad (2\le n\le N) \quad (2.1)$$
-> 
-> 
+>
 > $$q_0=1,\quad q_1=a_1,\quad q_n=a_nq_{n-1}+q_{n-2} \quad (2\le n\le N) \quad (2.2)$$
-> 
-> 
+>
 > Then:
+>
 > $$[a_0,a_1,\dots,a_n]=\frac{p_n}{q_n} \quad (2.3)$$
-> 
-> 
 
 **Proof.** From the expressions mentioned above:
 
@@ -70,7 +69,7 @@ $$[a_0]=\frac{a_0}{1},\quad [a_0,a_1]=\frac{a_1a_0+1}{a_1}$$
 
 Let us assume by induction that the statement holds for $n\le m$, where $m<N$. Then:
 
-$$[a_0,a_1,\dots,a_{m-1},a_{m}]=\frac{p_m}{q_{m}}=\frac{a_mp_{m-1}+p_{m-2}}{a_mq_{m-1}+q_{m-2}}$$
+$$[a_0,a_1,\dots,a_{m-1},a_{m}]=\frac{p_m}{q_{m}}=\frac{a_mp_{m-1}+p_{m-2 Rhe}}{a_mq_{m-1}+q_{m-2}}$$
 
 By applying $(1.2)$, we can perform the following calculation:
 
@@ -148,10 +147,9 @@ $$\frac{x^{n+1}(x-1)^n}{n!}e^x+2n\frac{x^n(x-1)^n}{n!}e^x-\frac{x^{n-1}(x-1)^n}{
 
 The lemma is proven. $\square$
 
-> **Theorem 1.** > 
+> **Theorem 1.**
+>
 > $$e=[1,0,1,1,2,1,1,4,1,1,8,1,1,10,1,1,\dots]$$
-> 
-> 
 
 **Proof.** Since for any $x\in [0,1]$, we have $|x|\le 1$ and $|x-1|\le 1$:
 
@@ -270,9 +268,7 @@ Therefore, $\{C_n\}$ is a Cauchy sequence. By the **completeness of real numbers
 
 > **Lemma 8.** For $k\ge 2$, $p_kq_{k-2}-p_{k-2}q_k=(-1)^ka_k$.
 
-**Proof.** 
-
-$$p_kq_{k-2}-p_{k-2}q_k=(a_kp_{k-1}+p_{k-2})q_{k-2}-p_{k-2}(a_kq_{k-1}+q_{k-2})=a_k(p_{k-1}q_{k-2}-p_{k-2}q_{k-1})$$
+**Proof.** $$p_kq_{k-2}-p_{k-2}q_k=(a_kp_{k-1}+p_{k-2})q_{k-2}-p_{k-2}(a_kq_{k-1}+q_{k-2})=a_k(p_{k-1}q_{k-2}-p_{k-2}q_{k-1})$$
 
 Applying Lemma 3 to the remaining expression in the parentheses, we get:
 
@@ -319,11 +315,8 @@ Now consider an arbitrary even-indexed convergent $C_{2s}$ and an odd-indexed co
 * **Case 1 ($2s<2t+1$):** Here, $2s\le 2t$. Thus, by Lemma 11:
 $$C_{2s}\le C_{2t}<C_{2t+1}$$
 
-
 * **Case 2 ($2s>2t+1$):** Here, $2s-1\ge 2t+1$. Therefore, by Lemma 10:
 $$C_{2s}<C_{2s-1}\le C_{2t+1}$$
-
-
 
 In either case, we have $C_{2s}<C_{2t+1}$, which completes the proof. $\square$
 
@@ -334,11 +327,10 @@ In either case, we have $C_{2s}<C_{2t+1}$, which completes the proof. $\square$
 * **Odd-indexed Case:** Let $n\ge 1$ be an odd number. Since the limit of a subsequence equals the limit of the sequence itself, $x=\lim_{k\to\infty}C_{2k}$. For all $2k\ge n+1$, based on the monotonic increase of even-indexed convergents (Lemma 11) and the fact that any even-indexed convergent is strictly less than any odd-indexed convergent (Lemma 12), we have:
 $$C_{n+1}\le C_{2k}<C_n$$
 
-
 Taking the limit as $k \to \infty$ gives $x\in [C_{n+1},C_n]$.
+
 * **Even-indexed Case:** For all $2k+1\ge n+1$, based on the monotonic decrease of odd-indexed convergents (Lemma 10) and Lemma 12, we can deduce:
 $$C_n<C_{2k+1}\le C_{n+1}$$
-
 
 Taking the limit gives $x\in [C_n,C_{n+1}]$.
 
