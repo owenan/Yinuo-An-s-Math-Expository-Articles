@@ -6,7 +6,7 @@ Hi, my name is Owen. A math, physics, and astronomy enthusiast. And this is my w
 * 📍 **Location:** China
 
 ## My Projects
-**Zorich Mathematical 'Analysis's solution compilation and translation:**  believe me or not, these grand two tomes of math gems has solution in Chinese, though it would need a bit of recompilation(as the solution's written for a course note) and translation(as it is in english)
+NA
 
 ### Contact Me
 You can find me on my email anyinuo20071130@gmail.com. My stack exchange account is: [stackexchange](https://stackexchange.com/users/32243045/owen-a)
