@@ -1,9 +1,4 @@
----
-layout: post
-title: "Proof of the Irrationality of e via Continued Fractions"
-author: "Owen An"
-mathjax: true
----
+## Proof of the Irrationality of e via Continued Fractions
 
 ## Proof Outline
 
