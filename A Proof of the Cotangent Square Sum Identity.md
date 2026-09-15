@@ -2,7 +2,7 @@
 
 ## Problem
 
-Prove that, for every integer \(m \geq 1\),
+Prove that, for every integer $m \geq 1$,
 
 $$
 \sum_{k=1}^{m}\cot^2\frac{k\pi}{2m+1}
@@ -16,7 +16,7 @@ We begin with the following consequence of De Moivre's theorem.
 
 ### Lemma
 
-For every integer \(m \geq 0\),
+For every integer $m \geq 0$,
 
 $$
 \sin((2m+1)x)
@@ -49,8 +49,7 @@ $$
 (i\sin x)^k.
 $$
 
-Only odd powers of \(i\) contribute to the imaginary part. Writing
-\(k=2j+1\), we obtain
+Only odd powers of $i$ contribute to the imaginary part. Writing $k=2j+1$, we obtain
 
 $$
 \sin((2m+1)x)
@@ -85,7 +84,7 @@ $$
 
 ## Constructing the Polynomial
 
-Factor out \(\sin^{2m+1}x\):
+Factor out $\sin^{2m+1}x$:
 
 $$
 \begin{aligned}
@@ -172,7 +171,7 @@ P\left(
 0.
 $$
 
-Thus the \(m\) numbers
+Thus the $m$ numbers
 
 $$
 \cot^2\frac{\pi}{2m+1},
@@ -181,13 +180,13 @@ $$
 \cot^2\frac{m\pi}{2m+1}
 $$
 
-are roots of \(P(t)\).
+are roots of $P(t)$.
 
-Since \(P\) has degree \(m\), these are precisely all of its roots.
+Since $P$ has degree $m$, these are precisely all of its roots.
 
 ## Applying Vieta's Formula
 
-Expanding \(P(t)\), the leading term comes from \(j=0\):
+Expanding $P(t)$, the leading term comes from $j=0$:
 
 $$
 a_m
@@ -197,7 +196,7 @@ a_m
 2m+1.
 $$
 
-The coefficient of \(t^{m-1}\) comes from \(j=1\):
+The coefficient of $t^{m-1}$ comes from $j=1$:
 
 $$
 a_{m-1}
