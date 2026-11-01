@@ -1,155 +1,203 @@
-**The First Form of the Stolz-Cesàro Theorem**
-If $(b_n)_{n=1}^\infty$ is a sequence of positive real numbers such that $\sum_{n=1}^\infty b_n=\infty$, then for any sequence $(a_n)_{n=1}^\infty\subset\mathbb{R}$, we have the following inequalities:
+# The Stolz–Cesàro Theorem and Applications
 
+## The First Form of the Stolz–Cesàro Theorem
 
-$$\begin{aligned}{\lim\sup}_{n\to\infty}\frac{a_1+a_2+\cdots+a_n}{b_1+b_2+\cdots+b_n}\le{\lim\sup}_{n\to\infty}\frac{a_n}{b_n};\quad(1)\\{\lim\inf}_{n\to\infty}\frac{a_1+a_2+\cdots+a_n}{b_1+b_2+\cdots+b_n}\ge{\lim\inf}_{n\to\infty}\frac{a_n}{b_n}.\quad(2)\end{aligned}$$
+If $(b_n)_{n=1}^\infty$ is a sequence of positive real numbers such that $\sum_{n=1}^\infty b_n = \infty$, then for any sequence $(a_n)_{n=1}^\infty \subset \mathbb{R}$, we have the following inequalities:
 
+$$
+\begin{aligned}
+\limsup_{n \to \infty} \frac{a_1 + a_2 + \cdots + a_n}{b_1 + b_2 + \cdots + b_n} &\le \limsup_{n \to \infty} \frac{a_n}{b_n}, \quad (1) \\
+\liminf_{n \to \infty} \frac{a_1 + a_2 + \cdots + a_n}{b_1 + b_2 + \cdots + b_n} &\ge \liminf_{n \to \infty} \frac{a_n}{b_n}. \quad (2)
+\end{aligned}
+$$
 
-We first prove (1).
+We first prove $(1)$.
 
-**Lemma (Equivalent form of limit superior)**
-Let $\{a_n\}$ be a sequence and $l\in\mathbb{R}$. Then the first proposition below implies the second proposition.
+---
 
-1. ${\lim\sup}_{n\to\infty}a_n=l$
-2. For any $\epsilon>0$, there exists $N\in\mathbb{N}$ such that $a_n<l+\epsilon$ for all $n\ge N$.
+### Lemma (Equivalent Form of Limit Superior)
 
-**Proof**
-Assume ${\lim\sup}_{n\to\infty}a_n=l$. If we let $s_n=\sup_{i\ge n}a_i$, then $\lim_{n\to\infty}s_n=l$.
-Thus, for any $\epsilon>0$, there exists $N\in\mathbb{N}$ such that $l-\epsilon<s_n<l+\epsilon$ for all $n\ge N$.
-That is to say, $\sup\{a_i:i\ge n\}<l+\epsilon$. Therefore,
+Let $\{a_n\}$ be a sequence and $l \in \mathbb{R}$. Then the first statement below implies the second:
 
+1. $\limsup_{n \to \infty} a_n = l$
+2. For any $\epsilon > 0$, there exists $N \in \mathbb{N}$ such that $a_n < l + \epsilon$ for all $n \ge N$.
 
-$$a_n\le\sup_{i\ge n}a_i<l+\epsilon\implies a_n<l+\epsilon$$
+#### Proof of Lemma
 
+Assume $\limsup_{n \to \infty} a_n = l$. Let $s_n = \sup_{i \ge n} a_i$, which implies $\lim_{n \to \infty} s_n = l$.
 
-$\square$
+Thus, for any $\epsilon > 0$, there exists $N \in \mathbb{N}$ such that $l - \epsilon < s_n < l + \epsilon$ for all $n \ge N$. That is:
 
-According to the Lemma, let $L={\lim\sup}_{n\to\infty}(a_n/b_n)$. Then for a fixed $l>L$, there exists $k\in\mathbb{N}$ such that:
+$$
+\sup \{a_i : i \ge n\} < l + \epsilon.
+$$
 
+Therefore:
 
-$$\frac{a_n}{b_n}\le l,\,\,\forall n>k\tag{3}$$
+$$
+a_n \le \sup_{i \ge n} a_i < l + \epsilon \implies a_n < l + \epsilon. \quad \square
+$$
 
+---
 
-Using (3), we obtain:
+### Proof of Theorem (1) and (2)
 
+According to the Lemma, let $L = \limsup_{n \to \infty} (a_n / b_n)$. For a fixed $l > L$, there exists $k \in \mathbb{N}$ such that:
 
-$$a_1+a_2+\cdots+a_n\le a_1+\cdots+a_k+l(b_{k+1}+b_{k+2}+\cdots+b_n),\quad\forall n>k\tag{4}$$
+$$
+\frac{a_n}{b_n} \le l, \quad \forall n > k \tag{3}
+$$
 
+Using $(3)$, we obtain:
 
-If we denote $a_1+\cdots+a_n$ as $A_n$ and $b_1+\cdots+b_n$ as $B_n$, the above inequality is equivalent to:
+$$
+a_1 + a_2 + \cdots + a_n \le a_1 + \cdots + a_k + l(b_{k+1} + b_{k+2} + \cdots + b_n), \quad \forall n > k \tag{4}
+$$
 
+Letting $A_n = a_1 + \cdots + a_n$ and $B_n = b_1 + \cdots + b_n$, inequality $(4)$ is equivalent to:
 
-$$A_n\le A_k+l(B_n-B_k)$$
+$$
+A_n \le A_k + l(B_n - B_k)
+$$
 
+Dividing both sides by $B_n$:
 
-Dividing both sides by $B_n$, we get:
+$$
+\frac{A_n}{B_n} \le l + \frac{A_k - lB_k}{B_n} \tag{5}
+$$
 
+Because $B_n \to \infty$ by hypothesis, fixing $k$ and taking the limit superior on both sides of $(5)$ gives:
 
-$$\frac{A_n}{B_n}\le l+\frac{A_k-lB_k}{B_n}\tag{5}$$
+$$
+\limsup_{n \to \infty} \frac{A_n}{B_n} \le l
+$$
 
+Since this holds for every $l > L$, we conclude:
 
-Because $B_n\to\infty$ by the given assumption, by fixing $k$ and taking the limit superior ($\lim\sup$) on both sides of (5), we get:
+$$
+\limsup_{n \to \infty} \frac{a_1 + \cdots + a_n}{b_1 + \cdots + b_n} \le L
+$$
 
+For $(2)$, consider $(-a_n)_{n=1}^\infty$. Applying $(1)$ to this sequence:
 
-$${\lim\sup}_{n\to\infty}(A_n/B_n)\le l$$
+$$
+\limsup_{n \to \infty} \frac{(-a_1) + \cdots + (-a_n)}{b_1 + \cdots + b_n} \le \limsup_{n \to \infty} \left( -\frac{a_n}{b_n} \right)
+$$
 
+Using the identity $\limsup (-x_n) = -\liminf x_n$:
 
-That is to say, we have obtained:
+$$
+-\liminf_{n \to \infty} \frac{a_1 + \cdots + a_n}{b_1 + \cdots + b_n} \le -\liminf_{n \to \infty} \frac{a_n}{b_n}
+$$
 
+Multiplying by $-1$ reverses the inequality:
 
-$${\lim\sup}_{n\to\infty}\frac{a_1+\cdots+a_n}{b_1+\cdots+b_n} \le l,\,\,\forall l> L$$
+$$
+\liminf_{n \to \infty} \frac{a_1 + a_2 + \cdots + a_n}{b_1 + b_2 + \cdots + b_n} \ge \liminf_{n \to \infty} \frac{a_n}{b_n}. \quad \square
+$$
 
+---
 
-which is equivalent to:
+## Equivalent Form of the Stolz–Cesàro Theorem
 
+If $(y_n)_{n=1}^\infty$ is a strictly increasing sequence and $\lim_{n \to \infty} y_n = \infty$, then for any sequence $(x_n)_{n=1}^\infty$:
 
-$${\lim\sup}_{n\to\infty}\frac{a_1+\cdots+a_n}{b_1+\cdots+b_n}\le L$$
+$$
+\begin{aligned}
+\limsup_{n \to \infty} \frac{x_n}{y_n} &\le \limsup_{n \to \infty} \frac{x_n - x_{n-1}}{y_n - y_{n-1}}, \quad (6) \\
+\liminf_{n \to \infty} \frac{x_n}{y_n} &\ge \liminf_{n \to \infty} \frac{x_n - x_{n-1}}{y_n - y_{n-1}}. \quad (7)
+\end{aligned}
+$$
 
+In particular, if the sequence $\left(\frac{x_n - x_{n-1}}{y_n - y_{n-1}}\right)$ converges:
 
-For the proof of (2), we consider $(-a_n)_{n=1}^\infty$. According to the proven (1), we have:
+$$
+\lim_{n \to \infty} \frac{x_n}{y_n} = \lim_{n \to \infty} \frac{x_n - x_{n-1}}{y_n - y_{n-1}}
+$$
 
+**Proof:**  
+Substitute $a_1 = x_1$, $b_1 = y_1$, and for $n \ge 2$, set $a_n = x_n - x_{n-1}$ and $b_n = y_n - y_{n-1}$ into the First Form of the Stolz–Cesàro Theorem. $\square$
 
-$${\lim\sup}_{n\to\infty}\frac{(-a_1)+\cdots+(-a_n)}{b_1+\cdots+b_n}\le {\lim\sup}_{n\to\infty}\left(\frac{-a_n}{b_n}\right)$$
+---
 
+## Additive Cesàro Theorem
 
-Because $\sup(-a)=-\inf(a)$, we can deduce (2), which is:
+### Part I
 
+For any sequence $(a_n)_{n=1}^\infty \subset \mathbb{R}$:
 
-$${\lim\inf}_{n\to\infty}\frac{a_1+a_2+\cdots+a_n}{b_1+b_2+\cdots+b_n}\ge{\lim\inf}_{n\to\infty}\frac{a_n}{b_n}$$
+$$
+\limsup_{n \to \infty} \frac{a_1 + a_2 + \cdots + a_n}{n} \le \limsup_{n \to \infty} a_n
+$$
 
+$$
+\liminf_{n \to \infty} \frac{a_1 + a_2 + \cdots + a_n}{n} \ge \liminf_{n \to \infty} a_n
+$$
 
-$\square$
+In particular, if $(a_n)_{n=1}^\infty$ converges:
 
-**Equivalent Form of the Stolz-Cesàro Theorem**
-If $(y_n)_{n=1}^\infty$ is a strictly increasing sequence, and $\lim_{n\to\infty}y_n=\infty$, then for any sequence $(x_n)_{n=1}^\infty$, we have the following two inequalities:
+$$
+\lim_{n \to \infty} \frac{a_1 + a_2 + \cdots + a_n}{n} = \lim_{n \to \infty} a_n
+$$
 
+**Proof:**  
+Set $b_n = 1$ for all $n$ in the First Form of the Stolz–Cesàro Theorem. $\square$
 
-$$\begin{aligned}\lim\sup_{n\to\infty}\frac{x_n}{y_n}&\leq\lim\sup_{n\to\infty}\frac{x_n-x_{n-1}}{y_n-y_{n-1}};\quad(6)\\\lim\inf_{n\to\infty}\frac{x_n}{y_n}&\geq\lim\inf_{n\to\infty}\frac{x_n-x_{n-1}}{y_n-y_{n-1}}.\quad(7)\end{aligned}$$
+---
 
+### Part II
 
-In particular, if the sequence $\left(\frac{x_n-x_{n-1}}{y_n-y_{n-1}}\right)$ has a limit (i.e., converges), then:
+For any sequence $(x_n)_{n=1}^\infty \subset \mathbb{R}$:
 
+$$
+\limsup_{n \to \infty} \frac{x_n}{n} \le \limsup_{n \to \infty} (x_n - x_{n-1})
+$$
 
-$$\lim_{n\to\infty}\frac{x_n}{y_n}=\lim_{n\to\infty}\frac{x_n-x_{n-1}}{y_n-y_{n-1}}$$
+$$
+\liminf_{n \to \infty} \frac{x_n}{n} \ge \liminf_{n \to \infty} (x_n - x_{n-1})
+$$
 
+In particular, if $(x_n - x_{n-1})$ converges:
 
-We begin the proof.
-In fact, to prove this, we only need to substitute $a_1=x_1, b_1=y_1$, and $a_n=x_n-x_{n-1}, b_n=y_n-y_{n-1}$ (for $n\ge 2$) into **The First Form of the Stolz-Cesàro Theorem**.
+$$
+\lim_{n \to \infty} \frac{x_n}{n} = \lim_{n \to \infty} (x_n - x_{n-1})
+$$
 
-**"Additive" Cesàro Theorem, Part I**
-For any sequence $(a_n)_{n=1}^\infty\subset\mathbb{R}$, we have:
+**Proof:**  
+Set $y_n = n$ in the Equivalent Form of the Stolz–Cesàro Theorem. $\square$
 
+---
 
-$${\lim\sup}_{n\to\infty}\frac{a_1+a_2+\cdots+a_n}{n}\le{\lim\sup}_{n\to\infty}a_n;$$
+## Multiplicative Cesàro Theorem
 
-$${\lim\inf}_{n\to\infty}\frac{a_1+a_2+\cdots+a_n}{n}\ge{\lim\inf}_{n\to\infty}a_n$$
+### Part I
 
+For any positive sequence $(a_n)_{n=1}^\infty$:
 
-In particular, if the sequence $(a_n)_{n=1}^\infty$ has a limit,
+$$
+\limsup_{n \to \infty} \sqrt[n]{a_1 a_2 \cdots a_n} \le \limsup_{n \to \infty} a_n
+$$
 
+$$
+\liminf_{n \to \infty} \sqrt[n]{a_1 a_2 \cdots a_n} \ge \liminf_{n \to \infty} a_n
+$$
 
-$$\lim_{n\to\infty}\frac{a_1+a_2+\cdots+a_n}{n}=\lim_{n\to\infty}a_n$$
+**Proof:**  
+Let $b_n = \ln a_n$, so that $\sqrt[n]{a_1 a_2 \cdots a_n} = \exp\left(\frac{b_1 + \cdots + b_n}{n}\right)$. Apply Part I of the Additive Cesàro Theorem and the monotonicity and continuity of the exponential function. $\square$
 
+---
 
-**Proof**
-Simply set $b_n=1$ for all $n$ in the First Form of the Stolz-Cesàro Theorem.
+### Part II
 
-**Part II**
-For any sequence $(x_n)_{n=1}^\infty\subset\mathbb{R}$, we have:
+For any positive sequence $(x_n)_{n=1}^\infty$:
 
+$$
+\limsup_{n \to \infty} \sqrt[n]{x_n} \le \limsup_{n \to \infty} \frac{x_n}{x_{n-1}}
+$$
 
-$${\lim\sup}_{n\to\infty}\frac{x_n}{n}\le{\lim\sup}_{n\to\infty}(x_n-x_{n-1})$$
+$$
+\liminf_{n \to \infty} \sqrt[n]{x_n} \ge \liminf_{n \to \infty} \frac{x_n}{x_{n-1}}
+$$
 
-$${\lim\inf}_{n\to\infty}\frac{x_n}{n}\ge{\lim\inf}_{n\to\infty}(x_n-x_{n-1})$$
-
-
-In particular, if the sequence $(x_n)_{n=1}^\infty$ has a limit,
-
-
-$$\lim_{n\to\infty}\frac{x_n}{n}=\lim_{n\to\infty}(x_n-x_{n-1})$$
-
-
-**Proof**
-Simply set $y_n=n$ in the Equivalent Form of the Stolz-Cesàro Theorem.
-
-**Multiplicative Cesàro Theorem, Part I**
-
-
-$${\lim\sup}_{n\to\infty}\sqrt[n]{a_1a_2\cdots a_n}\le {\lim\sup}_{n\to\infty}a_n$$
-
-$${\lim\inf}_{n\to\infty}\sqrt[n]{a_1a_2\cdots a_n}\ge {\lim\inf}_{n\to\infty}a_n$$
-
-
-**Proof**
-Let $b_n=\ln a_n$, so that $\sqrt[n]{a_1a_2\cdots a_n}=\exp\left(\frac{b_1+\cdots+b_n}{n}\right)$, and simply apply Part I of the Additive Cesàro Theorem.
-
-**Multiplicative Cesàro Theorem, Part II**
-
-
-$$\lim\sup_{n\to\infty}\sqrt[n]{x_n}\leq\lim\sup_{n\to\infty}\frac{x_n}{x_{n-1}};$$
-
-$$\lim\inf_{n\to\infty}\sqrt[n]{x_n}\geq\lim\inf_{n\to\infty}\frac{x_n}{x_{n-1}}.$$
-
-
-**Proof**
-Let $a_n=\ln x_n$, so that $\sqrt[n]{x_n}=\exp\left(\frac{a_n}{n}\right)$, and simply apply Part II of the Additive Cesàro Theorem.
+**Proof:**  
+Let $a_n = \ln x_n$, so that $\sqrt[n]{x_n} = \exp\left(\frac{a_n}{n}\right)$. Apply Part II of the Additive Cesàro Theorem using $a_n - a_{n-1} = \ln(x_n / x_{n-1})$ along with the exponential function. $\square$
